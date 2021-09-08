@@ -1,0 +1,302 @@
+/* HEADER - NAV */
+.header {
+  background-color: #002a3c;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.redes {
+  text-decoration: none;
+  margin-left: 5px;
+  position: relative;
+  left: 45px;
+}
+
+.redes:hover {
+  filter: brightness(90%);
+}
+
+.section-1 {
+  background-image: url(img/new2.jpg.png);
+  background-size: cover;
+  padding: 120px 0px 0px 0px;
+  text-align: center;
+}
+
+.section-1 .escudo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.section-1 .escudo {
+  display: inline-block;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+.tituloAparece {
+  font-family: "Kanit", cursive;
+  color: white;
+  font-size: 55px;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+h1 {
+  font-family: "Kanit", cursive;
+  color: #b4ac9d;
+  filter: drop-shadow(0 0 0.5rem black);
+  font-size: 35px;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#loading:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #002a3c;
+  border-top-color: #e7e4fe;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* CARRITO */
+.btn-carrito {
+  background-color: #002a3c;
+  color: #fff;
+}
+
+.carrito {
+  color: aliceblue;
+}
+
+#carritoCantidad {
+  background-color: #b4ac9d !important;
+  color: #fff !important;
+}
+
+.btn-carrito:hover {
+  color: aliceblue !important;
+}
+
+.btn-manejadores {
+  background-color: #b4ac9d;
+  border-radius: 40px !important;
+  padding: 2px 11px 2px 11px !important;
+  color: aliceblue;
+  font-size: 18px !important;
+}
+
+.btn-sub {
+  background-color: #b4ac9d;
+  border-radius: 40px !important;
+  padding: 2px 12px 2px 12px !important;
+  color: aliceblue;
+  font-size: 18px !important;
+}
+
+.btn-manejadores:hover {
+  color: aliceblue !important;
+  background-color: #002a3c;
+}
+
+.btn-sub:hover {
+  color: aliceblue !important;
+  background-color: #002a3c;
+}
+
+.bg-subtotal {
+  background-color: aliceblue;
+  color: #002a3c;
+}
+
+/* CARDS */
+.btn-compra {
+  background-color: #002a3c !important;
+  color: #fff !important;
+}
+
+.btn-compra:hover {
+  color: aliceblue !important;
+}
+
+/* FOOTER */
+#footer {
+  color: #fff;
+  font-size: 35px;
+  background: #002a3c !important;
+  background-size: cover;
+}
+
+#footer-title {
+  color: #883f0a;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  position: relative;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+  font-size: 40px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #b4ac9d;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: underline;
+  color: aliceblue;
+}
+
+#footer .footer-newsletter {
+  font-size: 20px;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-top: 70px;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #883f0a;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 5px;
+  text-align: left;
+  border: 1px solid #883f0a;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: aliceblue;
+  color: #002a3c;
+  transition: 0.3s;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: aliceblue;
+}
+
+#footer .copyright-wrap {
+  border-top: 1px solid aliceblue;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #b4ac9d;
+
+}
+
+#footer .credits a {
+  color: #b4ac9d;
+
+}
